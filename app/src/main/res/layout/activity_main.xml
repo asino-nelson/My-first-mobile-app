@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textOnBoard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/on_board"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/welcometext"
+        app:layout_constraintStart_toStartOf="@+id/welcometext"
+        app:layout_constraintTop_toBottomOf="@+id/welcometext" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login1"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_btn"
+        android:text="@string/log_in"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOnBoard"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpbtn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_btn"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login1"
+        app:layout_constraintStart_toStartOf="@+id/login1"
+        app:layout_constraintTop_toBottomOf="@+id/login1"
+        tools:ignore="TextContrastCheck,UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

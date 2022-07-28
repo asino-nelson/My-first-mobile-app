@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string name="welcome">WELCOME</string>
+    <string name="on_board">ON BOARD</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="log_in">LOG IN</string>
+    <string name="password">Password</string>
+    <string name="user_email">User Email</string>
+    <string name="sign_up_btn">SIGN UP</string>
+    <string name="log_in2">LOG IN</string>
+</resources>
